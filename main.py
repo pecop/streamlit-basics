@@ -1,3 +1,11 @@
+'''
+
+- Source: [【Streamlit超入門】データ可視化・分析アプリを爆速で作成できるPythonライブラリStreamlitの基礎を70分でマスター](https://www.youtube.com/watch?v=zp-kAt1Ih5k)
+- Updated on: Dec 2020
+
+'''
+
+
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -5,7 +13,7 @@ from PIL import Image
 import time
 
 st.title('Streamlit　Basics')
-st.sideheadertitle('Streamlit　Basics')
+# st.sidebar.title('Streamlit　Basics')
 
 
 
@@ -122,7 +130,8 @@ condition = st.slider('How are you right now?', 0, 100, 50)
 # Layout
 
 # Sidebar
-st.sidebar.write('Interactive Widgets')
+# st.sidebar.write('Interactive Widgets')
+st.sidebar.header('Interactive Widgets')
 text2 = st.sidebar.text_input('Tell me you hobby')
 condition2 = st.sidebar.slider('How are you?', 0, 100, 50)
 
@@ -159,11 +168,6 @@ expander2 = st.beta_expander('Query2')
 expander2.write('Answer to Query2')
 expander3 = st.beta_expander('Query3')
 expander3.write('Answer to Query3')
-
-
-
-
-
 
 
 
